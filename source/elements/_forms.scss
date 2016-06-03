@@ -1,0 +1,72 @@
+$form-transparency: rgba(255, 255, 255, 0.6);
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=number] {
+    width:           100%;
+    box-sizing:      border-box;
+    font-size:       $font-size-base;
+    line-height:     2.5rem;
+    padding:         0 1rem;
+    border-radius:   3px;
+    border:          1px solid #ccc;
+    background:      $form-transparency;
+    box-shadow:      $global-box-shadow;
+}
+
+
+// Disabled until better solution can be determined
+/*input[type=checkbox],
+input[type=radio] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    &:before {
+        content:         '';
+        box-sizing:      border-box;
+        background:      $form-transparency;
+        display:         inline-block;
+        vertical-align:  middle;
+        width:           20px;
+        height:          20px;
+        visibility:      visible;
+        padding:         10px;
+        margin-right:    22px;
+        box-shadow:      $global-box-shadow;
+        transition:      padding 100ms ease-in-out;
+    }
+
+    &:checked {
+        &:before {
+            padding: 3px;
+            background-color: transparent;
+            background-image:
+                linear-gradient(to bottom, $color-brand-primary 0%, $color-brand-primary 100%),
+                linear-gradient(to bottom, $form-transparency 0%, $form-transparency 100%);
+            background-clip: content-box, padding-box;
+        }
+    }
+}*/
+
+textarea {
+    width:           100%;
+    box-sizing:      border-box;
+    font-size:       $font-size-base;
+    line-height:     2.5rem;
+    padding:         0 1rem;
+    border-radius:   3px;
+    border:          1px solid #ccc;
+    background:      $form-transparency;
+    box-shadow:      $global-box-shadow;
+    resize:          none;
+}
+
+label {
+    font-size:       1rem;
+    line-height:     $line-height-base;
+}

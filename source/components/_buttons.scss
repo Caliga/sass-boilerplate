@@ -1,0 +1,102 @@
+.button {
+    background:         $color-default;
+    display:            inline-block;
+    font-size:          1rem;
+    color:              #FFFFFF;
+    box-sizing:         border-box;
+    line-height:        $line-height-base;
+    padding:            0 1.5rem;
+    text-decoration:    none;
+    border-radius:      3px;
+    transition:         background-color 200ms ease-in-out;
+    cursor:             pointer;
+    text-align:         center;
+
+    &--block {
+        display:        block;
+    }
+
+    &:hover {
+        background:     lighten($color-default, 5%);
+    }
+
+    &--success {
+        background:     $color-success;
+        &:hover {
+            background: lighten($color-success, 5%);
+        }
+    }
+
+    &--info {
+        background:     $color-info;
+        &:hover {
+            background: lighten($color-info, 5%);
+        }
+    }
+
+    &--warning {
+        background:     $color-warning;
+        &:hover {
+            background: lighten($color-warning, 5%);
+        }
+    }
+
+    &--danger {
+        background:     $color-danger;
+        &:hover {
+            background: lighten($color-danger, 5%);
+        }
+    }
+
+    &--inset {
+        background:     transparent;
+        box-shadow:     inset 0 0 0 2px $color-default;
+        color:          $color-default;
+        transition:     color 200ms ease-in-out,
+                        background-color 200ms ease-in-out;
+        &:hover {
+            background: $color-default;
+            color:      white;
+        }
+
+        &.button--success {
+            box-shadow: inset 0 0 0 2px $color-success;
+            color:      $color-success;
+
+            &:hover {
+                background: $color-success;
+                color:      white;
+            }
+        }
+
+        &.button--info {
+            box-shadow: inset 0 0 0 2px $color-info;
+            color:      $color-info;
+
+            &:hover {
+                background: $color-info;
+                color:      white;
+            }
+        }
+
+        &.button--warning {
+            box-shadow: inset 0 0 0 2px $color-warning;
+            color:      $color-warning;
+
+            &:hover {
+                background: $color-warning;
+                color:      white;
+            }
+        }
+
+        &.button--danger {
+            box-shadow: inset 0 0 0 2px $color-danger;
+            color:      $color-danger;
+
+            &:hover {
+                background: $color-danger;
+                color:      white;
+            }
+        }
+    }
+}

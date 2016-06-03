@@ -424,6 +424,74 @@ pre {
   margin-bottom: 1.25rem;
 }
 
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=number] {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/*input[type=checkbox],
+input[type=radio] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    &:before {
+        content:         '';
+        box-sizing:      border-box;
+        background:      $form-transparency;
+        display:         inline-block;
+        vertical-align:  middle;
+        width:           20px;
+        height:          20px;
+        visibility:      visible;
+        padding:         10px;
+        margin-right:    22px;
+        box-shadow:      $global-box-shadow;
+        transition:      padding 100ms ease-in-out;
+    }
+
+    &:checked {
+        &:before {
+            padding: 3px;
+            background-color: transparent;
+            background-image:
+                linear-gradient(to bottom, $color-brand-primary 0%, $color-brand-primary 100%),
+                linear-gradient(to bottom, $form-transparency 0%, $form-transparency 100%);
+            background-clip: content-box, padding-box;
+        }
+    }
+}*/
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  resize: none;
+}
+
+label {
+  font-size: 1rem;
+  line-height: 2;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1154,6 +1222,113 @@ pre {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.button {
+  background: #DD8266;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  line-height: 2;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 200ms ease-in-out;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button--block {
+  display: block;
+}
+
+.button:hover {
+  background: #e2937b;
+}
+
+.button--success {
+  background: #66BB6A;
+}
+
+.button--success:hover {
+  background: #78c37b;
+}
+
+.button--info {
+  background: #42A5F5;
+}
+
+.button--info:hover {
+  background: #5ab1f6;
+}
+
+.button--warning {
+  background: #FFA726;
+}
+
+.button--warning:hover {
+  background: #ffb140;
+}
+
+.button--danger {
+  background: #EF5350;
+}
+
+.button--danger:hover {
+  background: #f16a67;
+}
+
+.button--inset {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #DD8266;
+  color: #DD8266;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.button--inset:hover {
+  background: #DD8266;
+  color: white;
+}
+
+.button--inset.button--success {
+  box-shadow: inset 0 0 0 2px #66BB6A;
+  color: #66BB6A;
+}
+
+.button--inset.button--success:hover {
+  background: #66BB6A;
+  color: white;
+}
+
+.button--inset.button--info {
+  box-shadow: inset 0 0 0 2px #42A5F5;
+  color: #42A5F5;
+}
+
+.button--inset.button--info:hover {
+  background: #42A5F5;
+  color: white;
+}
+
+.button--inset.button--warning {
+  box-shadow: inset 0 0 0 2px #FFA726;
+  color: #FFA726;
+}
+
+.button--inset.button--warning:hover {
+  background: #FFA726;
+  color: white;
+}
+
+.button--inset.button--danger {
+  box-shadow: inset 0 0 0 2px #EF5350;
+  color: #EF5350;
+}
+
+.button--inset.button--danger:hover {
+  background: #EF5350;
+  color: white;
 }
 
 .text-left {

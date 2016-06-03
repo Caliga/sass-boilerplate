@@ -1,4 +1,5 @@
 // SETTINGS
+@import 'settings/global';
 @import 'settings/colors';
 @import 'settings/typography';
 @import 'settings/breakpoints';
@@ -13,11 +14,13 @@
 
 // ELEMENTS
 @import 'elements/typography';
+@import 'elements/forms';
 
 // OBJECTS
 @import 'objects/grid';
 
 // COMPONENTS
+@import 'components/buttons';
 
 // TRUMPS
 @import 'trumps/text';

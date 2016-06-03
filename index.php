@@ -1,25 +1,3 @@
-<?php
-function lorem($paragraphs = 1)
-{
-    $sentences = [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-        'Nullam erat nunc, dapibus blandit viverra et, interdum ac sapien. ',
-        'Pellentesque bibendum magna at nisl pellentesque aliquet. ',
-        'Pellentesque at quam eu libero suscipit mollis sit amet dapibus erat. ',
-        'Aliquam eu lorem libero. ',
-    ];
-    $lipsum = '';
-    for ($i = 0; $i < $paragraphs; $i++) {
-        shuffle($sentences);
-        $lipsum .= '<p>';
-        for ($x = 0; $x < count($sentences); $x++) {
-            $lipsum .= $sentences[$x];
-        }
-        $lipsum .= '</p>';
-    }
-    return $lipsum;
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,7 +6,7 @@ function lorem($paragraphs = 1)
         <title>HTML5 Test Page</title>
         <link rel="stylesheet" href="/build/style.css">
     </head>
-    <body>
+    <body style="background: rgb(200,200,255)">
         <div class="page" id="top" role="document">
             <header role="banner">
                 <h1>HTML5 Test Page</h1>
@@ -119,20 +97,6 @@ function lorem($paragraphs = 1)
                             </li>
                             <li>
                                 <a href="#forms__action">Action buttons</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#grid">Grid System</a>
-                        <ul>
-                            <li>
-                                <a href="#grid__standard">Grid - Standard</a>
-                            </li>
-                            <li>
-                                <a href="#grid__gutter">Grid - Gutter</a>
-                            </li>
-                            <li>
-                                <a href="#grid__responsive">Grid - Responsive</a>
                             </li>
                         </ul>
                     </li>
@@ -606,58 +570,6 @@ function lorem($paragraphs = 1)
                         </fieldset>
                         <p><a href="#top">[Top]</a></p>
                     </form>
-                </section>
-                <section id="grid">
-                    <fieldset id="grid__standard">
-                        <legend>Grid - Standard</legend>
-                        <div class="grid text-center">
-                            <div class="grid__cell">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__cell">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__cell">
-                                <?=lorem(2)?>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset id="grid__gutter">
-                        <legend>Grid - Gutter</legend>
-                        <div class="grid grid--gutter text-justify">
-                            <div class="grid__cell">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__cell">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__cell">
-                                <?=lorem(2)?>
-                            </div>
-                        </div>
-                    </fieldset>
-                    <fieldset id="grid__responsive">
-                        <legend>Grid - Responsive</legend>
-                        <div class="grid grid--gutters grid--reverse text-justify">
-                            <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(255, 255, 200)">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(255, 200, 255)">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(200, 255, 255)">
-                                <?=lorem(2)?>
-                            </div>
-                            <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(200, 255, 200)">
-                                <?=lorem(2)?>
-                            </div>
-                        </div>
-                        <div class="grid">
-                            <div class="grid__col grid__col--xl-6 grid__col--xl-6" style="background: rgb(255, 200, 200)">
-                                <?=lorem(2)?>
-                            </div>
-                        </div>
-                    </fieldset>
                 </section>
             </main>
             <footer role="contentinfo">
