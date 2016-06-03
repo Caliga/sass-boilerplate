@@ -1,4 +1,6 @@
-$screen-sm:    544px;
-$screen-md:    768px;
-$screen-lg:    992px;
-$screen-xl:    1140px;
+$breakpoints: (
+    sm: 544px,
+    md: 768px,
+    lg: 992px,
+    xl: 1140px
+);

@@ -2,6 +2,7 @@
 @import 'settings/colors';
 @import 'settings/typography';
 @import 'settings/breakpoints';
+@import 'settings/grid';
 
 // TOOLS
 @import 'tools/breakpoints';
@@ -14,5 +15,9 @@
 @import 'elements/typography';
 
 // OBJECTS
+@import 'objects/grid';
+
 // COMPONENTS
+
 // TRUMPS
+@import 'trumps/text';

@@ -1,23 +1,9 @@
-@mixin screen-sm {
-    @media only screen and (min-width: $screen-sm) {
-        @content;
-    }
-}
-
-@mixin screen-md {
-    @media only screen and (min-width: $screen-md) {
-        @content;
-    }
-}
-
-@mixin screen-lg {
-    @media only screen and (min-width: $screen-lg) {
-        @content;
-    }
-}
-
-@mixin screen-xl {
-    @media only screen and (min-width: $screen-xl) {
-        @content;
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media screen and (min-width: #{map-get($breakpoints, $size)}) {
+            @content;
+        }
+    } @else {
+        @warn "No breakpoint found with key `#{$breakpoint}`.";
     }
 }
