@@ -41,8 +41,15 @@
                         $percent: (100% / $grid-columns) * $i;
                         margin-left: $percent;
                     }
+                    &--#{$breakpoint}-auto {
+                        flex: 1;
+                    }
                 }
             }
+        }
+
+        &--auto {
+            flex: 1;
         }
     }
 }

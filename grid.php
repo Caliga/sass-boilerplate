@@ -30,7 +30,7 @@ function lorem($paragraphs = 1)
     </head>
     <body>
         <div class="container">
-            <div class="grid grid--gutters grid--reverse">
+            <div class="grid grid--gutters">
                 <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(200, 255, 255)">
                     <?=lorem(1)?>
                 </div>
@@ -46,7 +46,7 @@ function lorem($paragraphs = 1)
                 <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(200, 255, 200)">
                     <?=lorem(1)?>
                 </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2" style="background: rgb(255, 200, 200)">
+                <div class="grid__col grid__col--auto" style="background: rgb(255, 200, 200)">
                     <?=lorem(1)?>
                 </div>
             </div>
