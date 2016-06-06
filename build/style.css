@@ -404,9 +404,21 @@ textarea {
   /* 2 */
 }
 
+::-moz-selection {
+  background: #DD8266;
+}
+
+::selection {
+  background: #DD8266;
+}
+
+::-moz-selection {
+  background: #DD8266;
+}
+
 * {
   font-size: 16px;
-  line-height: 2;
+  line-height: 2rem;
 }
 
 h1,
@@ -422,6 +434,11 @@ table,
 blockquote,
 pre {
   margin-bottom: 1.25rem;
+}
+
+p {
+  line-height: 2rem;
+  margin: 0 0 2rem;
 }
 
 input[type=text],
@@ -489,7 +506,7 @@ textarea {
 
 label {
   font-size: 1rem;
-  line-height: 2;
+  line-height: 2rem;
 }
 
 .container {
@@ -1230,7 +1247,7 @@ label {
   font-size: 1rem;
   color: #FFFFFF;
   box-sizing: border-box;
-  line-height: 2;
+  line-height: 2rem;
   padding: 0 1.5rem;
   text-decoration: none;
   border-radius: 3px;
@@ -1329,6 +1346,148 @@ label {
 .button--inset.button--danger:hover {
   background: #EF5350;
   color: white;
+}
+
+.alert {
+  z-index: 7000;
+  position: absolute;
+  background: #DD8266;
+  top: 0;
+  width: 100%;
+}
+
+.alert--default {
+  background: #DD8266;
+}
+
+.alert--success {
+  background: #66BB6A;
+}
+
+.alert--info {
+  background: #42A5F5;
+}
+
+.alert--warning {
+  background: #FFA726;
+}
+
+.alert--danger {
+  background: #EF5350;
+}
+
+.alert--popup {
+  padding: 2em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: auto;
+}
+
+.alert--notification {
+  padding: 2em;
+  top: initial;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: auto;
+}
+
+@media screen and (min-width: 544px) {
+  .alert--notification {
+    left: initial;
+    right: 2rem;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+}
+
+.alert .alert__body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.alert .alert__close {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  right: 0px;
+  background: blue;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 8000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 0 2em;
+}
+
+.modal__container {
+  position: absolute;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  padding: 2em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  border-top: 6px solid #CCCCCC;
+}
+
+.modal--default .modal__container {
+  border-color: #DD8266;
+}
+
+.modal--success .modal__container {
+  border-color: #66BB6A;
+}
+
+.modal--info .modal__container {
+  border-color: #42A5F5;
+}
+
+.modal--warning .modal__container {
+  border-color: #FFA726;
+}
+
+.modal--danger .modal__container {
+  border-color: #EF5350;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.modal__close {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 8001;
+}
+
+@media screen and (min-width: 544px) {
+  .modal {
+    padding: 0;
+  }
+  .modal__container {
+    width: 544px;
+  }
 }
 
 .text-left {

@@ -1,0 +1,6 @@
+@function z($layer) {
+    @if not map-has-key($z-layers, $layer) {
+        @warn "No layer found for `#{$layer}`. Property ommited."
+    }
+    @return map-get($z-layers, $layer);
+}

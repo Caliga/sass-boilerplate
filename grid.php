@@ -65,5 +65,39 @@ function lorem($paragraphs = 1)
                 </div>
             </div>
         </div>
+        <!--<div class="modal modal--info">
+            <div class="modal__container">
+                <div class="modal__header">
+                    <p class="modal__title">Modal Title</p>
+                    <div class="modal__close">
+                        <a href="#" class="icon icon--close"></a>
+                    </div>
+                </div>
+                <div class="modal__body">
+                    <?=lorem(1)?>
+                </div>
+                <div class="modal__footer text-center">
+                    <a href="#" class="button button--info">Okay</a>
+                </div>
+            </div>
+        </div>-->
+        <div class="alert alert--danger">
+            <div class="alert__body">
+                <p>Lorem ipsum dolar sit amet!</p>
+            </div>
+            <div class="alert__close"></div>
+        </div>
+        <div class="alert alert--danger alert--popup">
+            <div class="alert__body">
+                <p>Lorem ipsum dolar sit amet!</p>
+            </div>
+            <div class="alert__close"></div>
+        </div>
+        <div class="alert alert--danger alert--notification">
+            <div class="alert__body">
+                <p>Lorem ipsum dolar sit amet!</p>
+            </div>
+            <div class="alert__close"></div>
+        </div>
     </body>
 </html>

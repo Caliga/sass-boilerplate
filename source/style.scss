@@ -2,10 +2,13 @@
 @import 'settings/global';
 @import 'settings/colors';
 @import 'settings/typography';
+@import 'settings/z-index';
 @import 'settings/breakpoints';
 @import 'settings/grid';
 
 // TOOLS
+@import 'tools/clearfix';
+@import 'tools/z-index';
 @import 'tools/breakpoints';
 @import 'tools/font-size';
 
@@ -20,7 +23,10 @@
 @import 'objects/grid';
 
 // COMPONENTS
+@import 'components/icons';
 @import 'components/buttons';
+@import 'components/alerts';
+@import 'components/modals';
 
 // TRUMPS
 @import 'trumps/text';
