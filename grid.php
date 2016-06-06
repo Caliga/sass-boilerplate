@@ -43,7 +43,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--success button--block">Click me</a>
+                            <a href="#" class="button button--success button--block button--xl">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--info button--block">Click me</a>
+                            <a href="#" class="button button--info button--block button--xl">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--warning button--block">Click me</a>
+                            <a href="#" class="button button--warning button--block button--xl">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--danger button--block">Click me</a>
+                            <a href="#" class="button button--danger button--block button--xl">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--success button--block button--inset">Click me</a>
+                            <a href="#" class="button button--success button--block button--inset button--lg">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--info button--block button--inset">Click me</a>
+                            <a href="#" class="button button--info button--block button--inset button--lg">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--warning button--block button--inset">Click me</a>
+                            <a href="#" class="button button--warning button--block button--inset button--lg">Click me</a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ function lorem($paragraphs = 1, $reorder = true)
                             <?=lorem(1, 0)?>
                         </div>
                         <div class="card__footer">
-                            <a href="#" class="button button--danger button--block button--inset">Click me</a>
+                            <a href="#" class="button button--danger button--block button--inset button--lg">Click me</a>
                         </div>
                     </div>
                 </div>

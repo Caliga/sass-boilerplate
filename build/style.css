@@ -417,8 +417,15 @@ textarea {
 }
 
 * {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2rem;
+}
+
+@media screen and (min-width: 544px) {
+  * {
+    font-size: 12px;
+    line-height: 2rem;
+  }
 }
 
 h1,
@@ -450,7 +457,7 @@ input[type=search],
 input[type=number] {
   width: 100%;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2.5rem;
   padding: 0 1rem;
   border-radius: 3px;
@@ -494,7 +501,7 @@ input[type=checkbox] + label {
 textarea {
   width: 100%;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2.5rem;
   padding: 0 1rem;
   border-radius: 3px;
@@ -514,6 +521,8 @@ label {
   margin-left: auto;
   width: 100%;
   max-width: 1400px;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .container--fluid {
@@ -1248,7 +1257,7 @@ label {
   color: #FFFFFF;
   box-sizing: border-box;
   line-height: 2rem;
-  padding: 0 1.5rem;
+  padding: 0 1.5em;
   text-decoration: none;
   border-radius: 0px;
   transition: background-color 200ms ease-in-out;
@@ -1259,6 +1268,21 @@ label {
 
 .button--block {
   display: block;
+}
+
+.button--sm {
+  font-size: 0.6rem;
+  line-height: 2em;
+}
+
+.button--lg {
+  font-size: 1.4rem;
+  line-height: 2em;
+}
+
+.button--xl {
+  font-size: 1.8rem;
+  line-height: 2em;
 }
 
 .button:hover {

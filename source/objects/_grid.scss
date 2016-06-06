@@ -3,6 +3,9 @@
     margin-left:    auto;
     width:          100%;
     max-width:      $container-max-width;
+    padding:        1rem;
+    box-sizing:     border-box;
+    
     &--fluid {
         max-width:  100%;
     }

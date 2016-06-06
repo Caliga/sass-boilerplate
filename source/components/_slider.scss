@@ -1,0 +1,13 @@
+.slider {
+    .slider__slides {
+        display: none;
+
+        &:first-child {
+            display:block;
+        }
+    }
+
+    .slider__controls {
+
+    }
+}
