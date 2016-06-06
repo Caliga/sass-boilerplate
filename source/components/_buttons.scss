@@ -7,10 +7,11 @@
     line-height:        $line-height-base;
     padding:            0 1.5rem;
     text-decoration:    none;
-    border-radius:      3px;
+    border-radius:      $global-border-radius;
     transition:         background-color 200ms ease-in-out;
     cursor:             pointer;
     text-align:         center;
+    box-shadow:         $global-box-shadow;
 
     &--block {
         display:        block;

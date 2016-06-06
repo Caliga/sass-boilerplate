@@ -1,0 +1,7 @@
+@each $breakpoint, $size in $breakpoints {
+    @include breakpoint($breakpoint) {
+        .hidden--#{$breakpoint} {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.table {
+    background:      #FFFFFF;
+    width:           100%;
+    box-shadow:      $global-box-shadow;
+    border-collapse: collapse;
+
+    th,
+    td {
+        padding:         1rem;
+        border-bottom:   1px solid #DDDDDD;
+        text-align:      left;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    td {
+
+    }
+
+    tr {
+        &:last-child {
+            td {
+                border: none;
+            }
+        }
+    }
+
+}

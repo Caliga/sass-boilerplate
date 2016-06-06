@@ -1,0 +1,42 @@
+.card {
+    background: #FFFFFF;
+    box-shadow: $global-box-shadow;
+    padding:    2rem;
+
+    &--float {
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+        &:hover {
+            box-shadow: $global-box-shadow-float;
+        }
+    }
+
+    &--flex {
+        display:        flex;
+        flex-direction: column;
+        flex:           1;
+    }
+
+    .card__header {
+
+        &--expand {
+            margin:     -2rem -2rem 0 -2rem;
+
+            .card__title {
+                padding: 0 2rem;
+            }
+        }
+    }
+
+    .card__title {
+        margin-top: 0;
+    }
+
+    .card__body {
+
+    }
+
+    .card__footer {
+
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-function lorem($paragraphs = 1)
+function lorem($paragraphs = 1, $reorder = true)
 {
     $sentences = [
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
@@ -10,7 +10,9 @@ function lorem($paragraphs = 1)
     ];
     $lipsum = '';
     for ($i = 0; $i < $paragraphs; $i++) {
-        shuffle($sentences);
+        if ($reorder) {
+            shuffle($sentences);
+        }
         $lipsum .= '<p>';
         for ($x = 0; $x < count($sentences); $x++) {
             $lipsum .= $sentences[$x];
@@ -28,76 +30,169 @@ function lorem($paragraphs = 1)
         <title>HTML5 Test Page</title>
         <link rel="stylesheet" href="/build/style.css">
     </head>
-    <body>
+    <body style="background:#eee">
         <div class="container">
+            <div class="margin-bottom"></div>
             <div class="grid grid--gutters">
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--default">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--success">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--info">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--warning">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--danger">Button</a>
-                </div>
-            </div>
-            <div class="grid grid--gutters">
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--inset button--block button--default">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--inset button--block button--success">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--inset button--block button--info">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--inset button--block button--warning">Button</a>
-                </div>
-                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 grid__col--xl-2">
-                    <a href="#" class="button button--inset button--block button--danger">Button</a>
-                </div>
-            </div>
-        </div>
-        <!--<div class="modal modal--info">
-            <div class="modal__container">
-                <div class="modal__header">
-                    <p class="modal__title">Modal Title</p>
-                    <div class="modal__close">
-                        <a href="#" class="icon icon--close"></a>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--success button--block">Click me</a>
+                        </div>
                     </div>
                 </div>
-                <div class="modal__body">
-                    <?=lorem(1)?>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--info button--block">Click me</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal__footer text-center">
-                    <a href="#" class="button button--info">Okay</a>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--warning button--block">Click me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--danger button--block">Click me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--success button--block button--inset">Click me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--info button--block button--inset">Click me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--warning button--block button--inset">Click me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__col grid__col--sm-6 grid__col--md-4 grid__col--lg-3 margin-bottom">
+                    <div class="card card--float card--flex">
+                        <div class="card__header card__header--expand">
+                            <img class="card__image" src="http://loremflickr.com/800/600/cats" width="100%" alt="Placeholder Image" />
+                        </div>
+                        <div class="card__body">
+                            <?=lorem(1, 0)?>
+                        </div>
+                        <div class="card__footer">
+                            <a href="#" class="button button--danger button--block button--inset">Click me</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>-->
-        <div class="alert alert--danger">
-            <div class="alert__body">
-                <p>Lorem ipsum dolar sit amet!</p>
-            </div>
-            <div class="alert__close"></div>
-        </div>
-        <div class="alert alert--danger alert--popup">
-            <div class="alert__body">
-                <p>Lorem ipsum dolar sit amet!</p>
-            </div>
-            <div class="alert__close"></div>
-        </div>
-        <div class="alert alert--danger alert--notification">
-            <div class="alert__body">
-                <p>Lorem ipsum dolar sit amet!</p>
-            </div>
-            <div class="alert__close"></div>
+            <table class="table margin-bottom">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Stuff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                    <tr>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                        <td>Some Example</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </body>
 </html>
