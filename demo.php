@@ -31,6 +31,19 @@ function lorem($paragraphs = 1, $reorder = true)
         <link rel="stylesheet" href="/build/style.css">
     </head>
     <body style="background:#eee">
+        <header class="site-header">
+            <div class="container">
+                <nav class="site-nav">
+                    <ul>
+                        <li class="site-nav--active"><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="container">
             <div class="breadcrumbs">
                 <ul>
@@ -40,7 +53,6 @@ function lorem($paragraphs = 1, $reorder = true)
                     <li>Baz</li>
                 </ul>
             </div>
-            <div class="margin-bottom"></div>
             <div class="grid grid--gutters">
                 <div class="grid__col grid__col--sm-12 grid__col--lg-8">
                     <div class="card">
@@ -66,6 +78,31 @@ function lorem($paragraphs = 1, $reorder = true)
                                             <label for="">Last Name</label>
                                             <input type="text">
                                         </div>
+                                    </div>
+                                    <div class="grid__col grid__col--sm-12">
+                                        <div class="form__group">
+                                            <label for="">Email</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col--sm-12">
+                                        <div class="form__group">
+                                            <label for="">Subject</label>
+                                            <select class="form__select">
+                                                <option value="">Option</option>
+                                                <option value="">Option</option>
+                                                <option value="">Option</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col--sm-12">
+                                        <div class="form__group">
+                                            <label for="">Query</label>
+                                            <textarea rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="grid__col grid__col--sm-12 text-right">
+                                        <a href="" class="button button--default">Submit</a>
                                     </div>
                                 </div>
                             </form>
@@ -246,5 +283,45 @@ function lorem($paragraphs = 1, $reorder = true)
                 <li class="pagination__next"><a href="#"></a></li>
             </ul>
         </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="grid grid--gutters">
+                    <div class="grid__col grid__col--xs-12 grid__col--md-6 grid__col--lg-3">
+                        <nav class="site-footer__nav">
+                            <h4>Site links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Products</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Privacy policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__col grid__col--xs-12 grid__col--md-6 grid__col--lg-3">
+                        <nav class="site-footer__nav">
+                            <h4>Our friends</h4>
+                            <ul>
+                                <li><a href="#">Foo Site</a></li>
+                                <li><a href="#">Bar Site</a></li>
+                                <li><a href="#">Baz Site</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__col grid__col--xs-12 grid__col--md-6 grid__col--lg-3"></div>
+                    <div class="grid__col grid__col--xs-12 grid__col--md-6 grid__col--lg-3">
+                        <h4>Newsletter</h4>
+                        <div class="newsletter">
+                            <form action="#" method="POST" class="form newsletter__form">
+                                <div class="form__group form__group--error">
+                                    <input type="text">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

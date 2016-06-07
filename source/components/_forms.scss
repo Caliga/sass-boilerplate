@@ -1,7 +1,36 @@
 .form {
     .form__group {
         label {
-            font-size: 0.8rem;
+            font-size:     0.8rem;
+        }
+
+        &--error {
+            input[type=text],
+            input[type=password],
+            input[type=url],
+            input[type=email],
+            input[type=tel],
+            input[type=search],
+            input[type=number],
+            textarea {
+                box-shadow: inset 0 0 0 2px $color-danger;
+            }
+        }
+    }
+    .form__input {
+        &--sm {
+            font-size:      0.6rem;
+            line-height:    2em;
+        }
+
+        &--lg {
+            font-size:      1.4rem;
+            line-height:    2em;
+        }
+
+        &--xl {
+            font-size:      1.8rem;
+            line-height:    2em;
         }
     }
 }

@@ -11,6 +11,7 @@
 @import 'tools/z-index';
 @import 'tools/breakpoints';
 @import 'tools/font-size';
+@import 'tools/strip-unit';
 
 // GENERIC
 @import 'generic/normalize';
@@ -32,6 +33,9 @@
 @import 'components/tables';
 @import 'components/breadcrumbs';
 @import 'components/pagination';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/navigation';
 
 // TRUMPS
 @import 'trumps/text';
