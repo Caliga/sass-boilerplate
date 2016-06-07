@@ -1,7 +1,7 @@
 .card {
     background: #FFFFFF;
     box-shadow: $global-box-shadow;
-    padding:    2rem;
+    padding:    1rem;
 
     &--float {
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -20,10 +20,10 @@
     .card__header {
 
         &--expand {
-            margin:     -2rem -2rem 0 -2rem;
+            margin:     -1rem -1rem 0 -1rem;
 
             .card__title {
-                padding: 0 2rem;
+                padding: 0 1rem;
             }
         }
     }

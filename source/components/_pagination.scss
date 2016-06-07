@@ -1,0 +1,53 @@
+ul.pagination {
+    list-style: none;
+    padding:    0;
+    text-align: center;
+    li {
+
+        display:        inline-block;
+        width:          2rem;
+        height:         2rem;
+        vertical-align: middle;
+
+        a {
+            display:    block;
+            text-decoration: none;
+            color: #000000;
+            width:      2rem;
+            height:     2rem;
+        }
+
+        &:hover {
+            a {
+                background: rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &.pagination__prev {
+            a {
+                &:after {
+                    content: '<';
+                }
+            }
+        }
+
+        &.pagination__next {
+            a {
+                &:after {
+                    content: '>';
+                }
+            }
+        }
+
+        &.pagination__dots {
+            &:after {
+                content: '\2026';
+            }
+        }
+
+        &.pagination__active {
+            background:  $color-brand-primary;
+            color:       #FFFFFF;
+        }
+    }
+}

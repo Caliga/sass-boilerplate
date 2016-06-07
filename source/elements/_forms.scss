@@ -12,7 +12,7 @@ input[type=number] {
     font-size:       $font-size-base;
     line-height:     2.5rem;
     padding:         0 1rem;
-    border-radius:   3px;
+    border-radius:   $global-border-radius;
     border:          1px solid #ccc;
     background:      $form-transparency;
     box-shadow:      $global-box-shadow;

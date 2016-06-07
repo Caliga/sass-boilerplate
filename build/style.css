@@ -421,13 +421,6 @@ textarea {
   line-height: 2rem;
 }
 
-@media screen and (min-width: 544px) {
-  * {
-    font-size: 12px;
-    line-height: 2rem;
-  }
-}
-
 h1,
 h2,
 h3,
@@ -440,7 +433,7 @@ ul,
 table,
 blockquote,
 pre {
-  margin-bottom: 1.25rem;
+  margin: 0 0 1rem;
 }
 
 p {
@@ -460,7 +453,7 @@ input[type=number] {
   font-size: 16px;
   line-height: 2.5rem;
   padding: 0 1rem;
-  border-radius: 3px;
+  border-radius: 0px;
   border: 1px solid #ccc;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -1250,6 +1243,10 @@ label {
           flex: 1;
 }
 
+.form .form__group label {
+  font-size: 0.8rem;
+}
+
 .button {
   background: #DD8266;
   display: inline-block;
@@ -1518,7 +1515,7 @@ label {
 .card {
   background: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card--float {
@@ -1542,11 +1539,11 @@ label {
 }
 
 .card .card__header--expand {
-  margin: -2rem -2rem 0 -2rem;
+  margin: -1rem -1rem 0 -1rem;
 }
 
 .card .card__header--expand .card__title {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .card .card__title {
@@ -1573,6 +1570,71 @@ label {
 
 .table tr:last-child td {
   border: none;
+}
+
+.breadcrumbs ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.breadcrumbs ul li {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.breadcrumbs ul li:after {
+  content: '\003E';
+  padding-left: 0.5rem;
+}
+
+.breadcrumbs ul li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs ul li:last-child:after {
+  content: none;
+}
+
+ul.pagination {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul.pagination li {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+ul.pagination li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  width: 2rem;
+  height: 2rem;
+}
+
+ul.pagination li:hover a {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+ul.pagination li.pagination__prev a:after {
+  content: '<';
+}
+
+ul.pagination li.pagination__next a:after {
+  content: '>';
+}
+
+ul.pagination li.pagination__dots:after {
+  content: '\2026';
+}
+
+ul.pagination li.pagination__active {
+  background: #DD8266;
+  color: #FFFFFF;
 }
 
 .text-left {
