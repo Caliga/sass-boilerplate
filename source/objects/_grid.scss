@@ -35,6 +35,11 @@
         @each $breakpoint, $size in $breakpoints {
             @include breakpoint($breakpoint) {
                 @for $i from 1 through $grid-columns {
+                    &--#{$i}\@#{$breakpoint} {
+                        $percent: (100% / $grid-columns) * $i;
+                        flex-basis: $percent;
+                        max-width: $percent;
+                    }
                     &--#{$breakpoint}-#{$i} {
                         $percent: (100% / $grid-columns) * $i;
                         flex-basis: $percent;
